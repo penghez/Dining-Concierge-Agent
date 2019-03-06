@@ -21,17 +21,24 @@ function getResponse(query) {
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4) {
       if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304) {
-        respmsg = JSON.parse(JSON.parse(xhr.response).body).botresp;
+        respmsg = JSON.parse(xhr.response).botresp;
+        console.log(respmsg);
         showResp(respmsg);
       }
     }
   };
   xhr.open(
     'GET',
-    'https://19szjc1ung.execute-api.us-east-1.amazonaws.com/dumbTest/botresp',
+    'https://ashou6obvj.execute-api.us-east-1.amazonaws.com/dumbTest/?query=' +
+      query,
     true
   );
-  xhr.setRequestHeader('Content-Type', 'application/form-data');
+  // xhr.setRequestHeader('Content-Type', 'application/form-data');
+  // xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+  // xhr.setRequestHeader(
+  //   'Access-Control-Allow-Origin',
+  //   'Origin, X-Requested-With, Content-Type, Accept'
+  // );
   xhr.send();
 }
 
