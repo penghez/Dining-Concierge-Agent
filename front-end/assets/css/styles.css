@@ -1,0 +1,115 @@
+html {
+  font: normal 16px sans-serif;
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #4caf50;
+}
+
+.outer-box {
+  width: 60%;
+  height: 600px;
+  border: 1px solid #666;
+  margin: 20px auto 0;
+  background: #f9f9f9;
+  border-radius: 15px;
+}
+
+.inner-box {
+  width: 95%;
+  height: 530px;
+  border: 1px solid #666;
+  background: #fff;
+  margin: 10px auto 0;
+  overflow: auto;
+  border-radius: 15px;
+}
+
+.talk-input {
+  width: 95%;
+  margin: 10px auto 0;
+}
+
+.type-area {
+  width: 84%;
+  height: 35px;
+  padding: 0px;
+  float: left;
+  margin-left: 10px;
+  outline: none;
+  text-indent: 10px;
+  border-radius: 10px;
+  border: 1px solid #666;
+}
+
+.send-btn {
+  width: 10%;
+  height: 35px;
+  float: left;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px solid #666;
+  font: 16px sans-serif;
+}
+
+.send-btn:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.send-btn:active {
+  background-color: #2f7031;
+  color: white;
+}
+
+.atalk {
+  margin: 10px;
+}
+
+.atalk span {
+  display: inline-block;
+  background: #0181cc;
+  border-radius: 10px;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.btalk {
+  margin: 10px;
+  text-align: right;
+}
+
+.btalk span {
+  display: inline-block;
+  background: #ef8201;
+  border-radius: 10px;
+  color: #fff;
+  padding: 5px 10px;
+}
