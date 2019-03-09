@@ -33,12 +33,6 @@ function getResponse(query) {
       query,
     true
   );
-  // xhr.setRequestHeader('Content-Type', 'application/form-data');
-  // xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-  // xhr.setRequestHeader(
-  //   'Access-Control-Allow-Origin',
-  //   'Origin, X-Requested-With, Content-Type, Accept'
-  // );
   xhr.send();
 }
 
