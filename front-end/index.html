@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amazon Lex ChatBot</title>
+
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/sdk/lib/axios/dist/axios.standalone.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/sdk/lib/CryptoJS/rollups/hmac-sha256.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/sdk/lib/CryptoJS/rollups/sha256.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/sdk/lib/CryptoJS/components/hmac.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/sdk/lib/CryptoJS/components/enc-base64.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/sdk/lib/url-template/url-template.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/sdk/lib/apiGatewayCore/sigV4Client.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/sdk/lib/apiGatewayCore/apiGatewayClient.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/sdk/lib/apiGatewayCore/simpleHttpClient.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/sdk/lib/apiGatewayCore/utils.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/sdk/apigClient.js"></script>
+
+    <script type="text/javascript" src="assets/js/send.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/js/authenticate-with-cognito.js"
+    ></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <ul>
+      <li><a>ChatBot</a></li>
+      <li style="float:right"><a href="#">Login</a></li>
+      <li style="float:right"><a href="#">Profile</a></li>
+    </ul>
+
+    <div class="outer-box">
+      <div class="inner-box" id="conversation">
+        <div class="atalk"></div>
+        <div class="btalk"></div>
+      </div>
+      <div class="talk-input">
+        <input type="text" class="type-area" id="input-query" />
+        <input
+          type="button"
+          value="SEND"
+          class="send-btn"
+          id="send-query"
+          onclick="sendMessage()"
+        />
+      </div>
+    </div>
+  </body>
+</html>
