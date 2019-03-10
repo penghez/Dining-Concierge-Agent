@@ -1,6 +1,7 @@
 html {
   font: normal 16px sans-serif;
   color: #555;
+  background-color: #ebe9e9;
 }
 
 ul {
@@ -39,7 +40,7 @@ li a.active {
   border: 1px solid #666;
   margin: 20px auto 0;
   background: #f9f9f9;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 .inner-box {
@@ -49,7 +50,7 @@ li a.active {
   background: #fff;
   margin: 10px auto 0;
   overflow: auto;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 .talk-input {

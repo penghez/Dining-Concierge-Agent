@@ -61,9 +61,13 @@
 
   <body>
     <ul>
-      <li><a>ChatBot</a></li>
-      <li style="float:right"><a href="#">Login</a></li>
-      <li style="float:right"><a href="#">Profile</a></li>
+      <li><a>Dining Concierge Agent</a></li>
+      <li style="float:right">
+        <a
+          href="https://diningbot.auth.us-east-1.amazoncognito.com/login?response_type=code&client_id=42g4pupk8g40nv2aamq8kd7cgc&redirect_uri=https://s3.amazonaws.com/dining-concierge-bot/front-end/index.html"
+          >Log out</a
+        >
+      </li>
     </ul>
 
     <div class="outer-box">
@@ -72,7 +76,12 @@
         <div class="btalk"></div>
       </div>
       <div class="talk-input">
-        <input type="text" class="type-area" id="input-query" />
+        <input
+          type="text"
+          class="type-area"
+          id="input-query"
+          onkeypress="enterPress(event)"
+        />
         <input
           type="button"
           value="SEND"
@@ -84,4 +93,3 @@
     </div>
   </body>
 </html>
-

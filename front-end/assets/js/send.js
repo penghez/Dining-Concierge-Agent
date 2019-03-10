@@ -13,6 +13,7 @@ function sendMessage() {
 
   getResponse(query.value);
   query.value = '';
+  conversation.scrollTop = conversation.scrollHeight;
 }
 
 function getResponse(query) {
@@ -37,6 +38,15 @@ function getResponse(query) {
 }
 
 function showResp(resp) {
+  var conversation = document.getElementById('conversation');
   var str = '<div class="atalk"><span>' + resp + '</span></div>';
   conversation.innerHTML = conversation.innerHTML + str;
+  conversation.scrollTop = conversation.scrollHeight;
+}
+
+function enterPress(e) {
+  var e = e || window.event;
+  if (e.keyCode == 13) {
+    sendMessage();
+  }
 }
