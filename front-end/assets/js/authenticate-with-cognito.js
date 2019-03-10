@@ -35,7 +35,7 @@ $(document).ready(function() {
     requestbody =
       'grant_type=authorization_code&client_id=42g4pupk8g40nv2aamq8kd7cgc&code=' +
       code +
-      '&redirect_uri=https://s3.amazonaws.com/dining-concierge-bot/front-end/index.html';
+      '&redirect_uri=https://s3.amazonaws.com/dining-concierge-agent/front-end/index.html';
     $.ajax({
       url: 'https://diningbot.auth.us-east-1.amazoncognito.com',
       method: 'POST',
@@ -78,6 +78,6 @@ $(document).ready(function() {
     });
   } else {
     window.location.href =
-      'https://diningbot.auth.us-east-1.amazoncognito.com/login?response_type=code&client_id=42g4pupk8g40nv2aamq8kd7cgc&redirect_uri=https://s3.amazonaws.com/dining-concierge-bot/front-end/index.html';
+      'https://diningbot.auth.us-east-1.amazoncognito.com/login?response_type=code&client_id=42g4pupk8g40nv2aamq8kd7cgc&redirect_uri=https://s3.amazonaws.com/dining-concierge-agent/front-end/index.html';
   }
 });
