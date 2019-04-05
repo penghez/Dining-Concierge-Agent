@@ -2,7 +2,7 @@ import csv
 import json
 
 
-with open('file1.csv', newline='') as csvfile:
+with open('predict.csv', newline='') as csvfile:
 	reader = csv.reader(csvfile)
 	rownum = 0
 
