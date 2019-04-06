@@ -30,8 +30,7 @@ function getResponse(query) {
   };
   xhr.open(
     'GET',
-    'https://ashou6obvj.execute-api.us-east-1.amazonaws.com/dumbTest/?query=' +
-      query,
+    'https://z1mzaz7k23.execute-api.us-east-1.amazonaws.com/v1/?query=' + query,
     true
   );
   xhr.send();
